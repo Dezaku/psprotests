@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+		
+		<!-- Preload Inter Display fonts -->
+		<link rel="preload" href="/fonts/InterDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/fonts/InterDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/fonts/InterDisplay-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>

@@ -1,0 +1,20 @@
+---
+import Hero from '../components/Hero.tsx';
+import ProtestsTable from '../components/ProtestsTable.tsx';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<div class="pb-4 sm:pb-8 md:pb-20">
+		<div class="mt-4 sm:mt-8 md:mt-20">
+			<Hero client:load />
+		</div>
+		<div class="max-w-full flex justify-center mt-8 sm:mt-12 md:mt-16">
+			<div class="max-w-6xl flex flex-col gap-6 sm:gap-8 md:gap-16 items-center px-2 sm:px-4 md:px-8 w-full">
+				<div class="w-full max-w-4xl">
+					<ProtestsTable client:load />
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
