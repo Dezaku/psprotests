@@ -9,6 +9,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { convertBerlinToLocalTime } from "@/lib/utils";
 
 // Comprehensive country to flag mapping
 const getCountryFlag = (countryName: string): string => {
@@ -242,6 +243,9 @@ export default function ProtestsTable() {
                 onClick={() => handleSort('startTime')}
               >
                 Start Time
+                <div className="text-xs text-gray-500 font-normal mt-1">
+                  Berlin-Zeit / Deine Zeit
+                </div>
               </TableHead>
             </TableRow>
           </TableHeader>
@@ -254,7 +258,13 @@ export default function ProtestsTable() {
                 </TableCell>
                 <TableCell className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 w-1/4">{protest.city}</TableCell>
                 <TableCell className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 w-1/3">{protest.locationName}</TableCell>
-                <TableCell className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 w-1/6">{protest.startTime}</TableCell>
+                <TableCell className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 w-1/6">{
+                  (() => {
+                    const { local } = convertBerlinToLocalTime(protest.date, protest.startTime);
+                    // Nur die Uhrzeit ohne Zeitzonen-Label anzeigen
+                    return local.replace(/ .+$/, '');
+                  })()
+                }</TableCell>
               </TableRow>
             ))}
           </TableBody>

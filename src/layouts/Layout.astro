@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+const DATABUDDY_CLIENT_ID = import.meta.env.DATABUDDY_CLIENT_ID;
 ---
 
 <!doctype html>
@@ -18,6 +19,27 @@ import '../styles/global.css';
 	</head>
 	<body>
 		<slot />
+		{DATABUDDY_CLIENT_ID && (
+			<script type="module" is:inline>
+				{`
+					import Databuddy from 'https://cdn.jsdelivr.net/npm/@databuddy/sdk/+esm';
+					Databuddy({
+						clientId: "${DATABUDDY_CLIENT_ID}",
+						trackHashChanges: true,
+						trackAttributes: true,
+						trackOutgoingLinks: true,
+						trackInteractions: true,
+						trackEngagement: true,
+						trackScrollDepth: true,
+						trackExitIntent: true,
+						trackBounceRate: true,
+						trackWebVitals: true,
+						trackErrors: true,
+						enableBatching: true,
+					});
+				`}
+			</script>
+		)}
 	</body>
 </html>
 

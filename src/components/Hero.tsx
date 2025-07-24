@@ -16,9 +16,14 @@ export default function Hero() {
                   </h1>
                   <h2 className="text-center text-s sm:text-m md:text-lg lg:text-xl font-regular">Witness the global stand for justice and human rights, wherever you are.</h2>
                 </div>
-                <button className="font-medium bg-orange-500 text-white py-2.5 px-5 sm:py-3 sm:px-6 md:py-[11px] md:px-[22px] w-fit rounded-full text-sm md:text-base hover:bg-orange-600 transition-colors">
+                <a
+                  href="https://tally.so/r/3x5Mjy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium bg-orange-500 text-white py-2.5 px-5 sm:py-3 sm:px-6 md:py-[11px] md:px-[22px] w-fit rounded-full text-sm md:text-base hover:bg-orange-600 transition-colors inline-block text-center"
+                >
                   Submit a Protest
-                </button>
+                </a>
               </div>
             </div>
           </div>
