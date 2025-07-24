@@ -1,339 +1,78 @@
 [
-    {
-      "id": "1",
-      "date": "04-08-2025",
-      "startTime": "14:00",
-      "endTime": null,
-      "country": "Germany",
-      "city": "Wiesbaden",
-      "locationName": "Hauptbahnhof",
-      "organizers": ["Palästina Solidarität Wiesbaden"],
-      "description": "Large demonstration calling for an immediate and permanent ceasefire in Gaza, an end to the occupation, and solidarity with the Palestinian people. Speakers included local activists and community leaders.",
-      "proofLinks": [
-        "https://www.berlinernews.de/protest-palestine-2024-07-20",
-        "https://t.me/pal_soli_berlin/event-20240720"
-      ],
-      "primaryLanguage": "German",
-      "status": "confirmed"
-    },
-    {
-      "id": "2",
-      "date": "05-08-2025",
-      "startTime": "16:30",
-      "endTime": null,
-      "country": "France",
-      "city": "Paris",
-      "locationName": "Place de la République",
-      "organizers": ["Collectif Palestine Paris"],
-      "description": "Solidarity march for Palestine with thousands expected to attend.",
-      "proofLinks": [
-        "https://www.lemonde.fr/protest-palestine-2024-08-05"
-      ],
-      "primaryLanguage": "French",
-      "status": "confirmed"
-    },
-    {
-      "id": "3",
-      "date": "06-08-2025",
-      "startTime": "13:00",
-      "endTime": null,
-      "country": "United Kingdom",
-      "city": "London",
-      "locationName": "Trafalgar Square",
-      "organizers": ["Palestine Solidarity Campaign"],
-      "description": "National demonstration calling for an end to the occupation and solidarity with Palestinian people.",
-      "proofLinks": [
-        "https://www.theguardian.com/protest-palestine-2024-08-06"
-      ],
-      "primaryLanguage": "English",
-      "status": "confirmed"
-    },
-    {
-      "id": "4",
-      "date": "07-08-2025",
-      "startTime": "15:45",
-      "endTime": null,
-      "country": "Germany",
-      "city": "Berlin",
-      "locationName": "Brandenburger Tor",
-      "organizers": ["Palästina Solidarität Berlin"],
-      "description": "Massive demonstration at Brandenburg Gate with international speakers.",
-      "proofLinks": [
-        "https://www.berliner-zeitung.de/protest-palestine-2024-08-07"
-      ],
-      "primaryLanguage": "German",
-      "status": "confirmed"
-    },
-    {
-      "id": "5",
-      "date": "08-08-2025",
-      "startTime": "12:00",
-      "endTime": null,
-      "country": "Spain",
-      "city": "Madrid",
-      "locationName": "Puerta del Sol",
-      "organizers": ["Solidaridad con Palestina Madrid"],
-      "description": "Peaceful demonstration calling for immediate ceasefire and humanitarian aid.",
-      "proofLinks": [
-        "https://www.elpais.com/protest-palestine-2024-08-08"
-      ],
-      "primaryLanguage": "Spanish",
-      "status": "confirmed"
-    },
-    {
-      "id": "6",
-      "date": "09-08-2025",
-      "startTime": "17:00",
-      "endTime": null,
-      "country": "Italy",
-      "city": "Rome",
-      "locationName": "Piazza del Popolo",
-      "organizers": ["Solidarietà con la Palestina Roma"],
-      "description": "Italian solidarity march with cultural performances and speeches.",
-      "proofLinks": [
-        "https://www.repubblica.it/protest-palestine-2024-08-09"
-      ],
-      "primaryLanguage": "Italian",
-      "status": "confirmed"
-    },
-    {
-      "id": "7",
-      "date": "10-08-2025",
-      "startTime": "14:30",
-      "endTime": null,
-      "country": "Netherlands",
-      "city": "Amsterdam",
-      "locationName": "Dam Square",
-      "organizers": ["Palestina Solidariteit Amsterdam"],
-      "description": "Dutch solidarity demonstration with Palestinian flags and banners.",
-      "proofLinks": [
-        "https://www.nrc.nl/protest-palestine-2024-08-10"
-      ],
-      "primaryLanguage": "Dutch",
-      "status": "confirmed"
-    },
-    {
-      "id": "8",
-      "date": "11-08-2025",
-      "startTime": "16:15",
-      "endTime": null,
-      "country": "Belgium",
-      "city": "Brussels",
-      "locationName": "Place de la Monnaie",
-      "organizers": ["Solidarité Palestine Bruxelles"],
-      "description": "European capital demonstration with international participation.",
-      "proofLinks": [
-        "https://www.lesoir.be/protest-palestine-2024-08-11"
-      ],
-      "primaryLanguage": "French",
-      "status": "confirmed"
-    },
-    {
-      "id": "9",
-      "date": "12-08-2025",
-      "startTime": "13:45",
-      "endTime": null,
-      "country": "Germany",
-      "city": "Hamburg",
-      "locationName": "Rathausmarkt",
-      "organizers": ["Palästina Solidarität Hamburg"],
-      "description": "Northern German solidarity demonstration with local activists.",
-      "proofLinks": [
-        "https://www.hamburger-abendblatt.de/protest-palestine-2024-08-12"
-      ],
-      "primaryLanguage": "German",
-      "status": "confirmed"
-    },
-    {
-      "id": "10",
-      "date": "13-08-2025",
-      "startTime": "15:00",
-      "endTime": null,
-      "country": "France",
-      "city": "Lyon",
-      "locationName": "Place Bellecour",
-      "organizers": ["Collectif Palestine Lyon"],
-      "description": "Regional French demonstration with community leaders and activists.",
-      "proofLinks": [
-        "https://www.leprogres.fr/protest-palestine-2024-08-13"
-      ],
-      "primaryLanguage": "French",
-      "status": "confirmed"
-    },
-    {
-      "id": "11",
-      "date": "14-08-2025",
-      "startTime": "18:00",
-      "endTime": null,
-      "country": "Sweden",
-      "city": "Stockholm",
-      "locationName": "Sergels Torg",
-      "organizers": ["Palestina Solidaritet Stockholm"],
-      "description": "Swedish solidarity demonstration with speakers from various organizations.",
-      "proofLinks": [
-        "https://www.svt.se/protest-palestine-2024-08-14"
-      ],
-      "primaryLanguage": "Swedish",
-      "status": "confirmed"
-    },
-    {
-      "id": "12",
-      "date": "15-08-2025",
-      "startTime": "14:00",
-      "endTime": null,
-      "country": "Norway",
-      "city": "Oslo",
-      "locationName": "Youngstorget",
-      "organizers": ["Palestina Solidaritet Norge"],
-      "description": "Norwegian demonstration calling for peace and justice in Palestine.",
-      "proofLinks": [
-        "https://www.nrk.no/protest-palestine-2024-08-15"
-      ],
-      "primaryLanguage": "Norwegian",
-      "status": "confirmed"
-    },
-    {
-      "id": "13",
-      "date": "16-08-2025",
-      "startTime": "16:30",
-      "endTime": null,
-      "country": "Denmark",
-      "city": "Copenhagen",
-      "locationName": "Rådhuspladsen",
-      "organizers": ["Palæstina Solidaritet Danmark"],
-      "description": "Danish solidarity march with Palestinian cultural elements.",
-      "proofLinks": [
-        "https://www.dr.dk/protest-palestine-2024-08-16"
-      ],
-      "primaryLanguage": "Danish",
-      "status": "confirmed"
-    },
-    {
-      "id": "14",
-      "date": "17-08-2025",
-      "startTime": "15:00",
-      "endTime": null,
-      "country": "Finland",
-      "city": "Helsinki",
-      "locationName": "Senaatintori",
-      "organizers": ["Palestiinan Solidaarisuus Helsinki"],
-      "description": "Finnish demonstration for Palestinian rights and peace.",
-      "proofLinks": [
-        "https://www.yle.fi/protest-palestine-2024-08-17"
-      ],
-      "primaryLanguage": "Finnish",
-      "status": "confirmed"
-    },
-    {
-      "id": "15",
-      "date": "18-08-2025",
-      "startTime": "17:00",
-      "endTime": null,
-      "country": "Austria",
-      "city": "Vienna",
-      "locationName": "Stephansplatz",
-      "organizers": ["Palästina Solidarität Wien"],
-      "description": "Austrian demonstration at the heart of Vienna with international speakers.",
-      "proofLinks": [
-        "https://www.derstandard.at/protest-palestine-2024-08-18"
-      ],
-      "primaryLanguage": "German",
-      "status": "confirmed"
-    },
-    {
-      "id": "16",
-      "date": "19-08-2025",
-      "startTime": "14:30",
-      "endTime": null,
-      "country": "Switzerland",
-      "city": "Zurich",
-      "locationName": "Paradeplatz",
-      "organizers": ["Palästina Solidarität Zürich"],
-      "description": "Swiss demonstration calling for immediate ceasefire and humanitarian aid.",
-      "proofLinks": [
-        "https://www.nzz.ch/protest-palestine-2024-08-19"
-      ],
-      "primaryLanguage": "German",
-      "status": "confirmed"
-    },
-    {
-      "id": "17",
-      "date": "20-08-2025",
-      "startTime": "16:00",
-      "endTime": null,
-      "country": "Ireland",
-      "city": "Dublin",
-      "locationName": "O'Connell Street",
-      "organizers": ["Ireland Palestine Solidarity Campaign"],
-      "description": "Irish solidarity demonstration with traditional music and speeches.",
-      "proofLinks": [
-        "https://www.irishtimes.com/protest-palestine-2024-08-20"
-      ],
-      "primaryLanguage": "English",
-      "status": "confirmed"
-    },
-    {
-      "id": "18",
-      "date": "21-08-2025",
-      "startTime": "15:30",
-      "endTime": null,
-      "country": "Portugal",
-      "city": "Lisbon",
-      "locationName": "Praça do Comércio",
-      "organizers": ["Solidariedade com a Palestina Lisboa"],
-      "description": "Portuguese demonstration for Palestinian rights and peace.",
-      "proofLinks": [
-        "https://www.publico.pt/protest-palestine-2024-08-21"
-      ],
-      "primaryLanguage": "Portuguese",
-      "status": "confirmed"
-    },
-    {
-      "id": "19",
-      "date": "22-08-2025",
-      "startTime": "18:00",
-      "endTime": null,
-      "country": "Greece",
-      "city": "Athens",
-      "locationName": "Syntagma Square",
-      "organizers": ["Συμπαράσταση Παλαιστίνης Αθήνα"],
-      "description": "Greek demonstration with traditional music and cultural performances.",
-      "proofLinks": [
-        "https://www.ekathimerini.com/protest-palestine-2024-08-22"
-      ],
-      "primaryLanguage": "Greek",
-      "status": "confirmed"
-    },
-    {
-      "id": "20",
-      "date": "23-08-2025",
-      "startTime": "17:30",
-      "endTime": null,
-      "country": "Poland",
-      "city": "Warsaw",
-      "locationName": "Plac Zamkowy",
-      "organizers": ["Solidarność z Palestyną Warszawa"],
-      "description": "Polish demonstration calling for peace and justice in Palestine.",
-      "proofLinks": [
-        "https://www.gazeta.pl/protest-palestine-2024-08-23"
-      ],
-      "primaryLanguage": "Polish",
-      "status": "confirmed"
-    },
-    {
-        "id": "21",
-        "date": "23-08-2025",
-        "startTime": "17:30",
-        "endTime": null,
-        "country": "Sudan",
-        "city": "Warsaw",
-        "locationName": "Plac Zamkowy",
-        "organizers": ["Solidarność z Palestyną Warszawa"],
-        "description": "Polish demonstration calling for peace and justice in Palestine.",
-        "proofLinks": [
-          "https://www.gazeta.pl/protest-palestine-2024-08-23"
-        ],
-        "primaryLanguage": "Polish",
-        "status": "confirmed"
-      }
-  ]
+  {
+    "id": "1",
+    "date": "26-07-2025",
+    "startTime": "15:00",
+    "endTime": null,
+    "country": "Germany",
+    "city": "Wiesbaden",
+    "locationName": "Hauptbahnhof",
+    "organizers": ["Palästina Solidarität Wiesbaden"],
+    "description": "",
+    "proofLinks": [
+    
+    ],
+    "primaryLanguage": "German",
+    "status": "confirmed"
+  },
+  {
+    "id": "2",
+    "date": "26-07-2025",
+    "startTime": "18:00",
+    "endTime": null,
+    "country": "Germany",
+    "city": "Mannheim",
+    "locationName": "Marktplatz",
+    "organizers": ["Free Palestine Mannheim"],
+    "description": "",
+    "proofLinks": [
+    ],
+    "primaryLanguage": "German",
+    "status": "confirmed"
+  },
+  {
+    "id": "3",
+    "date": "26-07-2025",
+    "startTime": "13:00",
+    "endTime": null,
+    "country": "Germany",
+    "city": "Bamberg",
+    "locationName": "Gabelmann",
+    "organizers": ["Bamberg for a Free Palestine"],
+    "description": "",
+    "proofLinks": [
+    ],
+    "primaryLanguage": "German",
+    "status": "confirmed"
+  },
+  {
+    "id": "4",
+    "date": "27-07-2025",
+    "startTime": "4:00",
+    "endTime": null,
+    "country": "Australia",
+    "city": "Melbourne",
+    "locationName": "State Library",
+    "organizers": ["Free Palestine Coalition Naarm"],
+    "description": "",
+    "proofLinks": [
+    ],
+    "primaryLanguage": "German",
+    "status": "confirmed"
+  },
+  {
+    "id": "5",
+    "date": "26-07-2025",
+    "startTime": "15:00",
+    "endTime": null,
+    "country": "Germany",
+    "city": "Bonn",
+    "locationName": "Moltkeplatz",
+    "organizers": ["Free Palestine Coalition Naarm"],
+    "description": "",
+    "proofLinks": [
+    ],
+    "primaryLanguage": "German",
+    "status": "confirmed"
+  }
+]
