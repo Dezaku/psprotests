@@ -15,8 +15,11 @@ export function convertBerlinToLocalTime(dateString: string, timeString: string)
   // Format: DD-MM-YYYY und HH:mm
   const [day, month, year] = dateString.split("-");
   const [hour, minute] = timeString.split(":");
+  // Stelle sicher, dass hour und minute zweistellig sind
+  const hourPadded = hour.padStart(2, '0');
+  const minutePadded = minute.padStart(2, '0');
   // Erzeuge einen ISO-String für die Berliner Zeit (ohne Offset)
-  const isoString = `${year}-${month}-${day}T${hour}:${minute}:00`;
+  const isoString = `${year}-${month}-${day}T${hourPadded}:${minutePadded}:00`;
   const berlinDate = new Date(isoString);
 
   // Zeit in der lokalen Zeitzone holen
