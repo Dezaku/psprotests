@@ -98,6 +98,19 @@ const getCountryFlag = (countryName: string): string => {
 type SortField = 'country' | 'city' | 'location' | 'startTime' | null;
 type SortDirection = 'asc' | 'desc' | null;
 
+// Hilfsfunktion zum Vergleichen von Daten im Format DD-MM-YYYY
+function isTodayOrFuture(dateStr: string) {
+  const [day, month, year] = dateStr.split("-").map(Number);
+  const protestDate = new Date(year, month - 1, day);
+  const now = new Date();
+  // Setze aktuelle Zeit auf 00:00:00, um nur das Datum zu vergleichen
+  now.setHours(0, 0, 0, 0);
+  return protestDate >= now;
+}
+
+// Filtere nur Proteste, die heute oder in der Zukunft liegen
+const upcomingProtests = protestsData.filter((protest) => isTodayOrFuture(protest.date));
+
 export default function ProtestsTable() {
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -131,8 +144,8 @@ export default function ProtestsTable() {
 
   // Filter protests based on search term
   const filteredProtests = searchTerm.trim() === "" 
-    ? protestsData 
-    : protestsData.filter((protest) => {
+    ? upcomingProtests 
+    : upcomingProtests.filter((protest) => {
         const searchLower = searchTerm.toLowerCase();
         return (
           protest.country.toLowerCase().includes(searchLower) ||
