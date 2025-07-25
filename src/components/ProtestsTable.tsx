@@ -95,7 +95,7 @@ const getCountryFlag = (countryName: string): string => {
   return "🏳️";
 };
 
-type SortField = 'country' | 'city' | 'location' | 'startTime' | null;
+type SortField = 'date' | 'country' | 'city' | 'location' | 'startTime' | null;
 type SortDirection = 'asc' | 'desc' | null;
 
 // Hilfsfunktion zum Vergleichen von Daten im Format DD-MM-YYYY
@@ -136,10 +136,10 @@ export default function ProtestsTable() {
 
   // Get sort indicator
   const getSortIndicator = (field: SortField) => {
-    if (sortField !== field) return "↕️";
+    if (sortField !== field) return null;
     if (sortDirection === 'asc') return "↑";
     if (sortDirection === 'desc') return "↓";
-    return "↕️";
+    return null;
   };
 
   // Filter protests based on search term
@@ -162,6 +162,11 @@ export default function ProtestsTable() {
     let bValue: string;
     
     switch (sortField) {
+      case 'date':
+        // YYYYMMDD für lexikographischen Vergleich
+        aValue = a.date.split('-').reverse().join('');
+        bValue = b.date.split('-').reverse().join('');
+        break;
       case 'country':
         aValue = a.country.toLowerCase();
         bValue = b.country.toLowerCase();
@@ -241,6 +246,13 @@ export default function ProtestsTable() {
         <Table className="min-w-[600px] bg-white rounded-lg shadow-sm">
           <TableHeader>
             <TableRow>
+              <TableHead
+                className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 cursor-pointer hover:bg-gray-50 select-none w-1/6"
+                onClick={() => handleSort('date')}
+              >
+                Date
+                {getSortIndicator('date')}
+              </TableHead>
               <TableHead 
                 className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 cursor-pointer hover:bg-gray-50 select-none w-1/4"
                 onClick={() => handleSort('country')}
@@ -273,6 +285,13 @@ export default function ProtestsTable() {
           <TableBody>
             {currentProtests.map((protest) => (
               <TableRow key={protest.id}>
+                <TableCell className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 w-1/6">
+                  {/* Datum als DD/MM/YYYY */}
+                  {(() => {
+                    const [day, month, year] = protest.date.split('-');
+                    return `${day}/${month}/${year}`;
+                  })()}
+                </TableCell>
                 <TableCell className="text-xs md:text-sm px-4 py-3 md:px-6 md:py-4 w-1/4">
                   <span className="mr-2">{getCountryFlag(protest.country)}</span>
                   {protest.country}
