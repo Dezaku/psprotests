@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-const DATABUDDY_CLIENT_ID = import.meta.env.DATABUDDY_CLIENT_ID;
+const clientId = import.meta.env.PUBLIC_DATABUDDY_CLIENT_ID;
+
 ---
 
 <!doctype html>
@@ -16,30 +17,29 @@ const DATABUDDY_CLIENT_ID = import.meta.env.DATABUDDY_CLIENT_ID;
 		<link rel="preload" href="/fonts/InterDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="/fonts/InterDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="/fonts/InterDisplay-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+		<script src="https://cdn.databuddy.cc/databuddy.js"
+  data-client-id={clientId}
+  data-track-hash-changes="true"
+  data-track-attributes="true"
+  data-track-outgoing-links="true"
+  data-track-interactions="true"
+  data-track-engagement="true"
+  data-track-scroll-depth="true"
+  data-track-exit-intent="true"
+  data-track-bounce-rate="true"
+  data-track-web-vitals="true"
+  data-track-errors="true"
+  data-enable-batching="true"
+  crossorigin="anonymous"
+  async
+></script>
 	</head>
 	<body>
 		<slot />
-		{DATABUDDY_CLIENT_ID && (
-			<script type="module" is:inline>
-				{`
-					import Databuddy from 'https://cdn.jsdelivr.net/npm/@databuddy/sdk/+esm';
-					Databuddy({
-						clientId: "${DATABUDDY_CLIENT_ID}",
-						trackHashChanges: true,
-						trackAttributes: true,
-						trackOutgoingLinks: true,
-						trackInteractions: true,
-						trackEngagement: true,
-						trackScrollDepth: true,
-						trackExitIntent: true,
-						trackBounceRate: true,
-						trackWebVitals: true,
-						trackErrors: true,
-						enableBatching: true,
-					});
-				`}
-			</script>
-		)}
+		<footer style="width:100%;text-align:center;padding:2rem 0 1rem 0;font-size:0.95rem;color:#888;">
+			<a href="/imprint" style="color:#888;text-decoration:underline;">Imprint</a>
+		</footer>
+
 	</body>
 </html>
 
