@@ -1,1 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 6 3"><rect fill="#009639" width="6" height="3"/><rect fill="#FFF" width="6" height="2"/><rect width="6" height="1"/><path fill="#ED2E38" d="M0,0l2,1.5L0,3Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <rect width="48" height="16" y="0" fill="#000"/>
+  <rect width="48" height="16" y="16" fill="#fff"/>
+  <rect width="48" height="16" y="32" fill="#007a3d"/>
+  <polygon points="0,0 24,24 0,48" fill="#ce1126"/>
+</svg>
